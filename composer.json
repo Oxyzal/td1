@@ -1,0 +1,27 @@
+{
+    "name": "oxyzal/td1",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Oxyzal\\Td1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oxyzal",
+            "email": "steven.madi@edu.devinci.fr"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.2"
+    },
+    "scripts": {
+        "phpstan": "php vendor/bin/phpstan analyze src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+}
